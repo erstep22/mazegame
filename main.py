@@ -33,15 +33,16 @@ robot.penup()
 robot.setheading(90)
 robot.turtlesize(turtle_scale, turtle_scale)
 robot.goto(startx, starty)
-robot.speed(2)
+robot.speed(200)
 robot.showturtle()
 
 #---- TODO: change maze here
 wn.bgpic("maze1.png") # other file names should be maze2.png, maze3.png
 
 #---- TODO: begin robot movement here
-# move robot forward with move()
-# turn robot left with turn_left()
+
+wn.onkey('w', move)
+
 # sample while loop:
 '''
 i = 0
